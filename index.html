@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>body{margin:0;font-family:'Montserrat',sans-serif;color:#2f3437;background:#fafaf9}a{color:#0b6482;text-decoration:none}a:hover{color:#074a61}html{scroll-behavior:smooth}</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</helmet>
+<div style="font-family:'Montserrat',sans-serif;color:#2f3437;background:#fafaf9">
+<nav class="navbar navbar-expand-lg sticky-top" style="background:#fff;border-bottom:1px solid #e7e9ea">
+<div class="container">
+<a class="navbar-brand" href="#inicio" style="width:120px;height:72px;overflow:hidden;position:relative;display:block;margin:0;padding:0;background:#fff;isolation:isolate">
+<img src="uploads/logo.png" alt="segurosnow" style="position:absolute;width:221px;left:-50px;top:-24px;mix-blend-mode:multiply;filter:brightness(1.08) contrast(1.15);max-width:none">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav mx-auto gap-lg-3" style="font-weight:600;font-size:15px">
+<li class="nav-item"><a class="nav-link" href="#seguros" style="color:#2f3437">Seguros</a></li>
+<li class="nav-item"><a class="nav-link" href="#nosotros" style="color:#2f3437">Por qué nosotros</a></li>
+<li class="nav-item"><a class="nav-link" href="#proceso" style="color:#2f3437">Cómo funciona</a></li>
+<li class="nav-item"><a class="nav-link" href="#opiniones" style="color:#2f3437">Opiniones</a></li>
+</ul>
+<div class="d-flex align-items-center gap-3">
+<a href="tel:+34900000000" style="font-weight:600;font-size:14px;color:#2f3437"><i class="bi bi-telephone me-1" style="color:#0b6482"></i>900 000 000</a>
+<a href="#cotizar" class="btn" style="background:#0b6482;color:#fff;font-weight:600;border-radius:10px;padding:10px 22px" style-hover="background:#074a61">Cotizar ahora</a>
+</div>
+</div>
+</div>
+</nav>
+
+<header id="inicio" style="background:linear-gradient(180deg,#eef5f7 0%,#fafaf9 100%);padding:80px 0 96px">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-7">
+<span style="display:inline-block;background:#dcecf1;color:#074a61;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:99px">Protección que avanza contigo</span>
+<h1 style="font-weight:800;font-size:clamp(36px,5vw,58px);line-height:1.08;letter-spacing:-.02em;margin:22px 0 20px;color:#23282b">Tu seguro, <span style="color:#0b6482">ahora</span>.<br>Sin letra pequeña.</h1>
+<p style="font-size:19px;line-height:1.6;color:#555d61;max-width:540px">Compara, contrata y gestiona seguros de auto, hogar, vida y salud en minutos. Asesoría humana cuando la necesitas.</p>
+<div class="d-flex flex-wrap gap-3 mt-4">
+<a href="#cotizar" class="btn btn-lg" style="background:#0b6482;color:#fff;font-weight:600;border-radius:12px;padding:14px 30px" style-hover="background:#074a61">Obtener cotización<i class="bi bi-arrow-up-right ms-2"></i></a>
+<a href="#seguros" class="btn btn-lg" style="background:#fff;color:#23282b;font-weight:600;border-radius:12px;padding:14px 30px;border:1.5px solid #cfd5d8" style-hover="border-color:#0b6482">Ver seguros</a>
+</div>
+<div class="d-flex flex-wrap gap-4 mt-5" style="font-size:14px;font-weight:600;color:#3d4448">
+<span><i class="bi bi-check-circle-fill me-2" style="color:#0b6482"></i>Cotización en 2 minutos</span>
+<span><i class="bi bi-check-circle-fill me-2" style="color:#0b6482"></i>Sin compromiso</span>
+<span><i class="bi bi-check-circle-fill me-2" style="color:#0b6482"></i>Asistencia 24/7</span>
+</div>
+</div>
+<div class="col-lg-5" id="cotizar">
+<div style="background:#fff;border-radius:20px;padding:34px;box-shadow:0 24px 60px -20px rgba(11,100,130,.3);border:1px solid #e3eaec">
+<h2 style="font-size:22px;font-weight:700;margin:0 0 4px">Cotiza tu seguro</h2>
+<p style="color:#6a7377;font-size:14px;margin:0 0 22px">Te respondemos en menos de 1 hora hábil.</p>
+<form>
+<label style="font-size:13px;font-weight:600;margin-bottom:6px">Tipo de seguro</label>
+<select class="form-select mb-3" style="padding:12px;border-radius:10px"><option>Auto</option><option>Hogar</option><option>Vida</option><option>Salud</option><option>Empresas</option></select>
+<label style="font-size:13px;font-weight:600;margin-bottom:6px">Nombre completo</label>
+<input class="form-control mb-3" placeholder="Tu nombre" style="padding:12px;border-radius:10px">
+<div class="row g-3 mb-3">
+<div class="col-6"><label style="font-size:13px;font-weight:600;margin-bottom:6px">Teléfono</label><input class="form-control" placeholder="600 000 000" style="padding:12px;border-radius:10px"></div>
+<div class="col-6"><label style="font-size:13px;font-weight:600;margin-bottom:6px">Correo</label><input class="form-control" type="email" placeholder="tu@correo.com" style="padding:12px;border-radius:10px"></div>
+</div>
+<button type="button" class="btn w-100" style="background:#0b6482;color:#fff;font-weight:700;padding:14px;border-radius:12px" style-hover="background:#074a61">Recibir mi cotización</button>
+<p style="font-size:12px;color:#8a9296;margin:14px 0 0;text-align:center"><i class="bi bi-lock-fill me-1"></i>Tus datos están protegidos y no se comparten.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="seguros" style="padding:96px 0;background:#fff">
+<div class="container">
+<div style="max-width:620px;margin-bottom:48px">
+<div style="color:#0b6482;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Nuestros seguros</div>
+<h2 style="font-weight:800;font-size:clamp(28px,3.5vw,40px);letter-spacing:-.02em;margin:0">Cobertura para cada etapa de tu vida</h2>
+</div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4"><div style="height:100%;border:1px solid #e3e7e9;border-radius:18px;padding:30px;background:#fafaf9" style-hover="border-color:#0b6482;box-shadow:0 14px 34px -16px rgba(11,100,130,.35)"><div style="width:52px;height:52px;border-radius:14px;background:#dcecf1;color:#0b6482;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px"><i class="bi bi-car-front"></i></div><h3 style="font-size:20px;font-weight:700">Auto</h3><p style="color:#5f686c;line-height:1.6;margin-bottom:18px">Responsabilidad civil, todo riesgo y asistencia en carretera con grúa ilimitada.</p><a href="#cotizar" style="font-weight:700;font-size:14px">Cotizar <i class="bi bi-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-4"><div style="height:100%;border:1px solid #e3e7e9;border-radius:18px;padding:30px;background:#fafaf9" style-hover="border-color:#0b6482;box-shadow:0 14px 34px -16px rgba(11,100,130,.35)"><div style="width:52px;height:52px;border-radius:14px;background:#dcecf1;color:#0b6482;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px"><i class="bi bi-house-heart"></i></div><h3 style="font-size:20px;font-weight:700">Hogar</h3><p style="color:#5f686c;line-height:1.6;margin-bottom:18px">Protege tu vivienda y pertenencias frente a incendios, robos y daños por agua.</p><a href="#cotizar" style="font-weight:700;font-size:14px">Cotizar <i class="bi bi-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-4"><div style="height:100%;border:1px solid #e3e7e9;border-radius:18px;padding:30px;background:#fafaf9" style-hover="border-color:#0b6482;box-shadow:0 14px 34px -16px rgba(11,100,130,.35)"><div style="width:52px;height:52px;border-radius:14px;background:#dcecf1;color:#0b6482;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px"><i class="bi bi-shield-check"></i></div><h3 style="font-size:20px;font-weight:700">Vida</h3><p style="color:#5f686c;line-height:1.6;margin-bottom:18px">Tranquilidad para tu familia con capitales a medida y coberturas por invalidez.</p><a href="#cotizar" style="font-weight:700;font-size:14px">Cotizar <i class="bi bi-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-4"><div style="height:100%;border:1px solid #e3e7e9;border-radius:18px;padding:30px;background:#fafaf9" style-hover="border-color:#0b6482;box-shadow:0 14px 34px -16px rgba(11,100,130,.35)"><div style="width:52px;height:52px;border-radius:14px;background:#dcecf1;color:#0b6482;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px"><i class="bi bi-heart-pulse"></i></div><h3 style="font-size:20px;font-weight:700">Salud</h3><p style="color:#5f686c;line-height:1.6;margin-bottom:18px">Cuadro médico amplio, sin esperas largas y con telemedicina incluida.</p><a href="#cotizar" style="font-weight:700;font-size:14px">Cotizar <i class="bi bi-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-4"><div style="height:100%;border:1px solid #e3e7e9;border-radius:18px;padding:30px;background:#fafaf9" style-hover="border-color:#0b6482;box-shadow:0 14px 34px -16px rgba(11,100,130,.35)"><div style="width:52px;height:52px;border-radius:14px;background:#dcecf1;color:#0b6482;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px"><i class="bi bi-briefcase"></i></div><h3 style="font-size:20px;font-weight:700">Empresas</h3><p style="color:#5f686c;line-height:1.6;margin-bottom:18px">Soluciones para pymes y autónomos: responsabilidad, local y ciberseguridad.</p><a href="#cotizar" style="font-weight:700;font-size:14px">Cotizar <i class="bi bi-arrow-right"></i></a></div></div>
+<div class="col-md-6 col-lg-4"><div style="height:100%;border-radius:18px;padding:30px;background:#0b6482;color:#fff;display:flex;flex-direction:column;justify-content:space-between"><div><h3 style="font-size:20px;font-weight:700;color:#fff">¿No sabes cuál elegir?</h3><p style="line-height:1.6;color:#fff">Un asesor analiza tu caso y te propone la mejor combinación, sin costo.</p></div><a href="#cotizar" class="btn" style="background:#fff;color:#074a61;font-weight:700;border-radius:10px;align-self:flex-start;padding:10px 22px">Hablar con un asesor</a></div></div>
+</div>
+</div>
+</section>
+
+<section id="nosotros" style="padding:96px 0;background:#fafaf9">
+<div class="container">
+<div class="row g-5 align-items-center">
+<div class="col-lg-5">
+<div style="aspect-ratio:4/5;border-radius:22px;background:repeating-linear-gradient(135deg,#e4eef1,#e4eef1 14px,#d6e6eb 14px,#d6e6eb 28px);display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:13px;color:#4a6a75;text-align:center;padding:20px">foto: asesor atendiendo a una familia</div>
+</div>
+<div class="col-lg-7">
+<div style="color:#0b6482;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Por qué segurosnow</div>
+<h2 style="font-weight:800;font-size:clamp(28px,3.5vw,40px);letter-spacing:-.02em;margin:0 0 36px">Seguridad clara, servicio rápido</h2>
+<div class="row g-4">
+<div class="col-sm-6"><i class="bi bi-lightning-charge" style="font-size:28px;color:#0b6482"></i><h3 style="font-size:18px;font-weight:700;margin:10px 0 6px">Contratación ágil</h3><p style="color:#5f686c;line-height:1.6;margin:0">Todo online, de la cotización a la póliza, en minutos.</p></div>
+<div class="col-sm-6"><i class="bi bi-people" style="font-size:28px;color:#0b6482"></i><h3 style="font-size:18px;font-weight:700;margin:10px 0 6px">Asesoría personal</h3><p style="color:#5f686c;line-height:1.6;margin:0">Un agente asignado que conoce tu caso y responde.</p></div>
+<div class="col-sm-6"><i class="bi bi-bar-chart-line" style="font-size:28px;color:#0b6482"></i><h3 style="font-size:18px;font-weight:700;margin:10px 0 6px">Mejor precio</h3><p style="color:#5f686c;line-height:1.6;margin:0">Comparamos aseguradoras para ofrecerte la mejor relación calidad-precio.</p></div>
+<div class="col-sm-6"><i class="bi bi-file-earmark-text" style="font-size:28px;color:#0b6482"></i><h3 style="font-size:18px;font-weight:700;margin:10px 0 6px">Transparencia total</h3><p style="color:#5f686c;line-height:1.6;margin:0">Coberturas y exclusiones explicadas en lenguaje claro.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="proceso" style="padding:96px 0;background:#23282b;color:#fff">
+<div class="container">
+<div style="text-align:center;max-width:560px;margin:0 auto 56px">
+<div style="color:#7cc3d9;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Cómo funciona</div>
+<h2 style="font-weight:800;font-size:clamp(28px,3.5vw,40px);letter-spacing:-.02em;margin:0;color:#fff">Asegúrate en tres pasos</h2>
+</div>
+<div class="row g-4">
+<div class="col-md-4"><div style="font-size:56px;font-weight:800;color:#7cc3d9;line-height:1">01</div><h3 style="font-size:20px;font-weight:700;margin:14px 0 8px;color:#fff">Cuéntanos qué necesitas</h3><p style="color:#d3d9dc;line-height:1.6">Completa el formulario con unos pocos datos.</p></div>
+<div class="col-md-4"><div style="font-size:56px;font-weight:800;color:#7cc3d9;line-height:1">02</div><h3 style="font-size:20px;font-weight:700;margin:14px 0 8px;color:#fff">Compara opciones</h3><p style="color:#d3d9dc;line-height:1.6">Recibes propuestas de varias aseguradoras, explicadas.</p></div>
+<div class="col-md-4"><div style="font-size:56px;font-weight:800;color:#7cc3d9;line-height:1">03</div><h3 style="font-size:20px;font-weight:700;margin:14px 0 8px;color:#fff">Contrata y listo</h3><p style="color:#d3d9dc;line-height:1.6">Firma digital y tu póliza activa el mismo día.</p></div>
+</div>
+</div>
+</section>
+
+<section id="opiniones" style="padding:96px 0;background:#fff">
+<div class="container">
+<h2 style="font-weight:800;font-size:clamp(28px,3.5vw,40px);letter-spacing:-.02em;margin:0 0 40px">Lo que dicen nuestros clientes</h2>
+<div class="row g-4">
+<div class="col-md-4"><div style="height:100%;background:#fafaf9;border:1px solid #e3e7e9;border-radius:18px;padding:28px"><div style="color:#0b6482;margin-bottom:14px"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p style="line-height:1.65">“Cambié mi seguro de auto en una tarde y ahorré bastante. Me explicaron todo sin tecnicismos.”</p><div style="font-weight:700;font-size:14px;margin-top:18px">María G. <span style="font-weight:500;color:#6a7377">· Seguro de auto</span></div></div></div>
+<div class="col-md-4"><div style="height:100%;background:#fafaf9;border:1px solid #e3e7e9;border-radius:18px;padding:28px"><div style="color:#0b6482;margin-bottom:14px"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p style="line-height:1.65">“Tuve una fuga de agua y el asesor gestionó todo. Atención rápida y humana.”</p><div style="font-weight:700;font-size:14px;margin-top:18px">Carlos R. <span style="font-weight:500;color:#6a7377">· Seguro de hogar</span></div></div></div>
+<div class="col-md-4"><div style="height:100%;background:#fafaf9;border:1px solid #e3e7e9;border-radius:18px;padding:28px"><div style="color:#0b6482;margin-bottom:14px"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p style="line-height:1.65">“Aseguramos a todo nuestro equipo con una sola póliza. Proceso claro y sin sorpresas.”</p><div style="font-weight:700;font-size:14px;margin-top:18px">Laura M. <span style="font-weight:500;color:#6a7377">· Empresas</span></div></div></div>
+</div>
+</div>
+</section>
+
+<section style="padding:0 0 96px;background:#fff">
+<div class="container">
+<div style="background:#0b6482;border-radius:24px;padding:56px 40px;text-align:center;color:#fff">
+<h2 style="font-weight:800;font-size:clamp(26px,3.5vw,38px);letter-spacing:-.02em;margin:0 0 12px;color:#fff">Protege lo que importa, hoy</h2>
+<p style="font-size:18px;margin:0 0 28px;color:#fff">Tu cotización gratuita está a dos minutos.</p>
+<a href="#cotizar" class="btn btn-lg" style="background:#fff;color:#074a61;font-weight:700;border-radius:12px;padding:14px 32px">Cotizar ahora<i class="bi bi-arrow-up-right ms-2"></i></a>
+</div>
+</div>
+</section>
+
+<footer style="background:#23282b;color:#c9d0d3;padding:56px 0 28px">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-5"><div style="font-weight:800;font-size:24px;color:#fff;margin-bottom:12px">seguros<span style="color:#7cc3d9">now</span></div><p style="line-height:1.6;max-width:360px;margin:0">Seguros claros, contratación rápida y asesoría cercana.</p></div>
+<div class="col-6 col-lg-3"><div style="font-weight:700;color:#fff;margin-bottom:12px">Seguros</div><div class="d-flex flex-column gap-2" style="font-size:14px"><a href="#seguros" style="color:#c9d0d3" style-hover="color:#fff">Auto</a><a href="#seguros" style="color:#c9d0d3" style-hover="color:#fff">Hogar</a><a href="#seguros" style="color:#c9d0d3" style-hover="color:#fff">Vida</a><a href="#seguros" style="color:#c9d0d3" style-hover="color:#fff">Salud</a></div></div>
+<div class="col-6 col-lg-4"><div style="font-weight:700;color:#fff;margin-bottom:12px">Contacto</div><div class="d-flex flex-column gap-2" style="font-size:14px"><span><i class="bi bi-telephone me-2"></i>900 000 000</span><span><i class="bi bi-envelope me-2"></i>hola@segurosnow.com</span><span><i class="bi bi-clock me-2"></i>Lun–Vie 9:00–19:00</span></div></div>
+</div>
+<hr style="border-color:#3a4145;margin:36px 0 20px">
+<div style="font-size:13px">© 2026 segurosnow. Todos los derechos reservados · Aviso legal · Privacidad</div>
+</div>
+</footer>
+</div>
+
+</x-dc>
+</body>
+</html>
